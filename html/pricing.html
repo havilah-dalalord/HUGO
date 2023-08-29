@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUGO-Pricing</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrapcss.css">
+    <link rel="stylesheet" href="../line-awesome-1.3.0/1.3.0/css/line-awesome.css">
+    <link rel="stylesheet" href="../cdnjs/animate.min.css">
+    <link rel="stylesheet" href="../css/style_price.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Montserrat+Alternates:ital,wght@1,200&family=Poppins:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="../index.html"><img src="../img/hugo.png" width="100px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active_nav_link" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <button class="open-button" onclick="openForm()"><div class="iconbox-2"><i class="las la-comment-dots"></i></div></button>
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <a href="#home"><button class="open-button" style="margin-bottom: 4em;"><div class="iconbox-2"><i class="las la-angle-double-up"></i></div></button></a>
+        <section id="services" class="full-height px-lg-5">
+            <div class="container">
+    
+              <div class="row pb-4">
+                <div class="col-lg-8">
+                  <h6 class="text-brand font">FEATURES</h6>
+                  <h1 class="font">Features We Provide</h1>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="service first1 p-4 bg-base rounded-4 shadow-effect">
+                    <div class="iconbox">
+                      <span class="bronze">$50</span>
+                    </div>
+                    <h4 class="mt-4 mb-2 first font bronze">Bronze</h4>
+                    <p class="font">
+                        <ul class="ul">
+                            <li class="li">No Access to Investors</li>
+                            <li class="li">Limited Service</li>
+                            <li class="li">Limited funds</li>
+                        </ul>
+                    </p>
+                    <a href="#" class="link-custom">Read More</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="service second p-4 bg-base rounded-4 shadow-effect">
+                    <div class="iconbox">
+                      <span class="silver">$100</span> 
+                    </div>
+                    <h4 class="mt-4 mb-2 first font silver">Silver</h4>
+                    <p class="font">
+                        <ul class="ul">
+                            <li class="li">Little Access to Investors</li>
+                            <li class="li">Mentors</li>
+                            <li class="li">Limited funds</li>
+                        </ul>
+                    </p>
+                    <a href="#" class="link-custom">Read More</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="service first1 p-4 bg-base rounded-4 shadow-effect">
+                    <div class="iconbox">
+                      <span class="gold">$500</span>
+                    </div>
+                    <h4 class="mt-4 mb-2 first font gold">Gold</h4>
+                    <p class="font">
+                        <ul class="ul">
+                            <li class="li">Unlimited Access to investors</li>
+                            <li class="li">Unlimited Service</li>
+                            <li class="li">Unlimited Funds</li>
+                        </ul>
+                    </p>
+                    <a href="#" class="link-custom">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        <div class="container">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="../index.html" class="nav-link px-2">Home</a></li>
+                <li class="nav-item"><a href="../index.html#services" class="nav-link px-2">Features</a></li>
+                <li class="nav-item"><a href="pricing.html" class="nav-link px-2">Pricing</a></li>
+                <li class="nav-item"><a href="faqs.html" class="nav-link px-2">FAQs</a></li>
+                <li class="nav-item"><a href="../index.html#about" class="nav-link px-2">About</a></li>
+              </ul>
+              <p class="text-center text-muted">© 2022 HUGO, Inc</p>
+            </footer>
+          </div>
+        <script src="../bootstrap/bootstrapjs.js"></script>
+        <script>
+          function openForm() {
+              document.getElementById("myForm").style.display = "block";
+          }
+                  
+          function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+          }
+      </script>
+</body>
+</html>

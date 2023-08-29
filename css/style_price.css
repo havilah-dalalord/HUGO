@@ -1,0 +1,219 @@
+::-webkit-scrollbar {
+    width: 5px;
+    overflow-x: none;
+}
+::-webkit-scrollbar-track {
+    /* background-color: #1b1e20; */
+    background: var(--color-base);
+    margin-block: 0.25em;
+    border-radius: 0.3em;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-brand);
+    border-radius: 50px;
+}
+:root {
+    --color-body: #b6cbbe;
+    --color-heading: #eef3db;
+    --color-base: #0bd7f1;
+    --color-base2: #031657;
+    --color-brand: #063872;
+    --color-brand2: #093c77;
+    --sidebar-width: 240px;
+    --font-base: 'Poppins';
+    --svg-size: 50px;
+}
+
+body{
+    font-family: var(--font-base);
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,a,.nav-link{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Navbar*/
+
+.nav-link{
+    color: #093c77;
+}
+
+.active-nav-link{
+    padding: 10px;
+    background: var(--color-brand2);
+    color: var(--color-base);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav-link:hover{
+    padding: 10px;
+    background: var(--color-brand2);
+    color: var(--color-base);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav-link:active{
+    padding: 10px;
+    background: var(--color-brand2);
+    color: var(--color-base);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.iconbox-2{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+.ul{
+    list-style-type: none;
+    border: 2px solid var(--color-brand2);
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.li{
+    padding: 20px;
+    border-bottom: 2px solid var(--color-brand2);
+}
+
+
+/* .navbar-brand{
+    font-family: 'Century Gothic';
+} */
+
+.navbar{
+    border-bottom: 2px solid var(--color-brand2);
+    background: #fff;
+}
+.btn{
+    padding: 12px 28px;
+    font-weight: 600;
+}
+
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus{
+   background-color: var(--color-brand2);
+   color: var(--color-base);
+   border-color: var(--color-brand2);
+}
+
+.link-custom{
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after{
+    width: 100%;
+}
+
+.bronze{
+    /* color: rgb(228, 70, 30); */
+    color: darkorange;
+}
+
+.silver{
+    color: rgb(102, 100, 97);
+}
+
+.gold{
+    color: gold;
+}
+
+.open-button {
+    background-color: var(--color-base2);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 100px;
+    right: 28px;
+    width: auto;
+    border-radius: 35px;
+    }
+    
+    /* The popup chat - hidden by default */
+    .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 1px solid #f1f1f1;
+    z-index: 9;
+    border-radius: 35px;
+    }
+    
+    /* Add styles to the form container */
+    .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 35px;
+    }
+    
+    /* Full-width textarea */
+    .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+    overflow-y: scroll;
+    }
+    
+    /* When the textarea gets focus, do something */
+    .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+    }
+    
+    /* Set a style for the submit/send button */
+    .form-container .btn {
+    background-color: var(--color-base);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    }
+    
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+    background-color: var(--color-base2);
+    }
+    
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+    }
